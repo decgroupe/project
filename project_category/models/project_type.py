@@ -26,7 +26,8 @@ class ProjectType(models.Model):
     complete_name = fields.Char(
         string='Complete Name',
         compute='_compute_complete_name',
-        store=True
+        store=True,
+        translate=True,
     )
     description = fields.Text(
         translate=True,
